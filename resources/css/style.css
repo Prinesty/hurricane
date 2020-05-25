@@ -1,0 +1,180 @@
+html,
+body {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
+  background-size: cover;
+}
+
+.banner img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+nav {
+  background-color: OrangeRed;
+  color: white;
+  padding: 1rem;
+}
+
+li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.stage,
+.rating,
+.poster,
+.location {
+  margin: 4em auto;
+}
+
+.stage {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.stage img {
+  height: 10%;
+  width: 10%;
+  margin-right: 5%;
+}
+
+.rating {
+  background-color: OrangeRed;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rating h1 {
+  padding-bottom: 2rem;
+}
+
+.location h1 {
+  margin-top: 2rem;
+}
+
+.text h2, p {
+  padding-bottom: 2rem;
+}
+
+
+.poster img {
+  display: inline-block;
+  width: 30%;
+  margin: 1.5%;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.location img {
+  width: 100%;
+}
+
+footer {
+  background-color: OrangeRed;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 0;
+  color: white;
+}
+
+/** Media Only Screens **/
+@media only screen and (max-width: 960px) {
+  .banner {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .banner {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .stage img {
+    display: none;
+  }
+
+  .stage {
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .stage,
+  .rating,
+  .poster,
+  .location {
+    margin: 1em auto;
+  }
+
+  .rating {
+    height: 10rem;
+  }
+
+  .poster img {
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .poster img {
+    width: 28%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer nav {
+    display: none;
+  }
+
+  footer {
+    padding-left: 2rem;
+    height: 7rem;
+  }
+
+}
